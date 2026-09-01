@@ -1,10 +1,10 @@
-# 📄 Documentação de Software e Plano de Testes – PsiCompany
+Documentação de Software e Plano de Testes – PsiCompany
 
 Este repositório contém a **Documentação Técnica** e o **Plano de Testes** unificados do projeto **PsiCompany**, desenvolvidos como parte da atividade prática da disciplina de Qualidade e Testes de Software (QTS) / Projeto Integrador do curso Técnico em Desenvolvimento de Sistemas.
 
 ---
 
-## 📌 1. Identificação do Projeto
+1. Identificação do Projeto
 - **Nome do Projeto:** PsiCompany (Registro de informações, vídeo chamada e chat em tempo real)
 - **Curso:** Técnico em Desenvolvimento de Sistemas (3º Ano – Integrado ao Ensino Médio)
 - **Versão do Plano:** `1.0`
@@ -12,7 +12,7 @@ Este repositório contém a **Documentação Técnica** e o **Plano de Testes** 
 
 ---
 
-## 🎯 2. Escopo do Teste & Objetivos
+2. Escopo do Teste & Objetivos
 
 ### Escopo Incluído:
 - **Backend & Comunicação:** Validação de rotas, serviços de sinalização WebRTC e simulação de resposta.
@@ -29,7 +29,7 @@ Este repositório contém a **Documentação Técnica** e o **Plano de Testes** 
 
 ---
 
-## 🛠️ 3. Tipos de Teste e Responsabilidades
+3. Tipos de Teste e Responsabilidades
 
 | Tipo de Teste | Foco Principal | Ferramentas | Responsável |
 | :--- | :--- | :--- | :--- |
@@ -39,7 +39,7 @@ Este repositório contém a **Documentação Técnica** e o **Plano de Testes** 
 
 ---
 
-## 📋 4. Levantamento de Requisitos
+4. Levantamento de Requisitos
 
 ### Requisitos Funcionais (RF)
 - **RF01:** Seleção de perfil ("Paciente" ou "Psicólogo").
@@ -85,7 +85,7 @@ Este repositório contém a **Documentação Técnica** e o **Plano de Testes** 
 
 ---
 
-## 🚨 5. Análise de Vulnerabilidades e Pontos Críticos
+5. Análise de Vulnerabilidades e Pontos Críticos
 
 1. **Persistência de Dados Sensíveis no Cliente:** Como os dados (CPF, Telefone, E-mail) são mantidos em estado local, há vulnerabilidade a vazamentos em dispositivos compartilhados. *Ação recomendada:* Criptografia local e migração para backend seguro com autenticação JWT.
 2. **Tratamento de Mídia & Permissões:** Recusas de permissão de câmera/microfone pelo usuário podem travar a execução se não forem capturadas por exceções. *Ação recomendada:* Implementação de retries e avisos amigáveis em tela.
